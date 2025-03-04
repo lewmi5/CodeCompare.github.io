@@ -17,8 +17,8 @@ index_layout = 'page'
 def string_to_filename(string):
     string = string.replace('/', '-')
     string = string.replace('\0', '')
-    # return strftime("%Y-%m-%d-", current_time) + string
-    return "2025-03-04-" + string
+    return strftime("%Y-%m-%d-", current_time) + string
+    # return "2025-03-03-" + string
 
 def parse_table(htmltable):
     parsed_url = urlparse(url)
@@ -98,7 +98,7 @@ def main():
     htmltable = soup.find('table', id='top20')
     if htmltable:
         table = parse_table(htmltable)
-        # table = table[15:]
+        # table = table[:14]
         # generate_markdown_subpages(table, subpages_folder, df_paragraphs)
         table_markdown = to_markdown(table)
         with open(os.path.join(subpages_folder, "index.md"), 'w') as file:
