@@ -12,7 +12,7 @@ This project scrapes the [TIOBE Index](https://www.tiobe.com/tiobe-index/) webpa
 - **Data Parsing:** Extracts table data such as dates, images, language names, ratings, and rating changes.
 - **Markdown Conversion:** Converts the parsed data into Markdown tables and pages.
 - **Jekyll Integration:** Generates Markdown files formatted for use with Jekyll layouts.
-- **Subpage Generation:** Optionally creates individual Markdown subpages for each language, including generated content via DuckDuckGo Search.
+- **Subpage Generation:** Creates individual Markdown subpages for each language, including generated content via DuckDuckGo Search.
 
 ### Required Python Libraries
 
